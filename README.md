@@ -12,12 +12,10 @@ npm run typecheck
 ```
 
 ## Try Hive with real agents
-1. In the Hive container this checkout lives at `/data/repo` and the daemon already runs
-   against it (`deploy/entrypoint.sh`). Locally: `HIVE_PROJECT_ROOT=<this folder> npm start`
-   from the Hive repo.
+1. From the Hive repo: `HIVE_PROJECT_ROOT=../hive-playground npm start`.
 2. Open the dashboard at `<Hive URL>/ui` and sign in with your Hive token.
 3. Open two or three coding-agent sessions in this folder. `.mcp.json` and
-   `.claude/settings.json` already connect Claude Code to Hive (paths assume Hive at `/app` and
+   `.claude/settings.json` already connect Claude Code to Hive (paths assume Hive at `/Users/sanika/Documents/Projects/Hive-hack` and
    HIVE_TOKEN / HIVE_URL in the environment); `.muse/hooks.json` is a
    best-guess template for Muse Code.
 4. Give each agent one of the tasks below. They collide on the price unit by design.
