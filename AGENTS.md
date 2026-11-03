@@ -21,8 +21,10 @@ When you change a shared interface (a signature, a field, the unit of a returned
    Do NOT use `hive_apply_operation`: it edits Hive's shared copy on the server, not your files.
 6. If a Hive message says your edit would break a teammate's work, stop and coordinate through a
    Ghost Contract instead of forcing the edit.
-7. `hive_analyze` asks Meta's Muse Spark to look for meaning-level conflicts (such as dollars vs
-   cents) in everyone's changes.
+7. To check for meaning-level conflicts (such as dollars vs cents) in everyone's changes, run this in the
+   terminal: `node .hive/hive-hook.mjs analyze`. It sends Hive's Muse Spark request from this laptop (the
+   hosted server is not offered the model) and Hive validates and records the answer. `hive_analyze` is
+   the same check run from the server and currently reports the model as unavailable.
 
 Before you say a task is done, run `npm test` and `npm run typecheck` here. `hive_verify` runs tests on
 Hive's shared copy, not on your laptop, so it does not prove your local work.
