@@ -12,12 +12,9 @@ npm run typecheck
 ```
 
 ## Try Hive with real agents
-1. From the Hive repo: `HIVE_PROJECT_ROOT=../hive-playground npm start`.
-2. Open the dashboard at `<Hive URL>/ui` and sign in with your Hive token.
-3. Open two or three coding-agent sessions in this folder. `.mcp.json` and
-   `.claude/settings.json` already connect Claude Code to Hive (paths assume Hive at `/Users/sanika/Documents/Projects/Hive-hack` and
-   HIVE_TOKEN / HIVE_URL in the environment); `.muse/hooks.json` is a
-   best-guess template for Muse Code.
+1. Ask your Hive admin for a member token (Connect screen on the Hive dashboard).
+2. Clone this repo, `npm install`, then run the Connect screen's one-line setup in this folder.
+3. Start Claude Code here. Each teammate does the same on their own laptop.
 4. Give each agent one of the tasks below. They collide on the price unit by design.
 
 ### Agent tasks

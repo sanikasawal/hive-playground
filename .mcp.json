@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "hive": {
-      "command": "node",
-      "args": ["--disable-warning=ExperimentalWarning", "/Users/sanika/Documents/Projects/Hive-hack/src/server/mcp.ts"]
-    }
-  }
-}
